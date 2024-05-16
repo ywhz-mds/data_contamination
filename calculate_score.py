@@ -13,7 +13,7 @@ for item in perplexity_data:
         break
     i+=1
 p_clean=p_list[:i]
-p_dirty=p_list[i:]
+p_dirty=p_list[i:1618]
 c_mean=np.mean(p_clean)
 d_mean=np.mean(p_dirty)
 std_clean=np.std(p_clean)
