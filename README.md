@@ -5,4 +5,6 @@ LLM&amp;NLG Project
 # my_data_contamination
 通过对文本截断，让模型进行补全，比较补全后的句子与原句子的相似度来判断句子是clean还是dirty，评测指标主要用SequenceMatching,余弦相似度
 # calculate_score
-计算置信区间，但是发现并不能很好地区分
+计算置信区间，结果为clean=(14.405536295975855, 15.229970502540832)
+dirty=(12.263873552658106, 13.088307759223083)
+其实是可以区分的
