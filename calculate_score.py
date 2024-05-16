@@ -4,16 +4,11 @@ from scipy import stats
 with open('perplexity.json', 'r',encoding = 'utf-8') as f:
     perplexity_data = json.load(f)
 p_list = []
-i=0
 print(len(perplexity_data))
 for item in perplexity_data:
     p_list.append(item['perplexity'])
-    if(item['label']=='dirty'):
-        print(i)
-        break
-    i+=1
-p_clean=p_list[:i]
-p_dirty=p_list[i:1618]
+p_clean=p_list[:809]
+p_dirty=p_list[809:1618]
 c_mean=np.mean(p_clean)
 d_mean=np.mean(p_dirty)
 std_clean=np.std(p_clean)
