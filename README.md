@@ -34,3 +34,6 @@ dirty=(12.263873552658106, 13.088307759223083)
 - hidden states的向量化数据特征难以提取，或不具有普适性
 - 尚未和文本特征结合来构造数据，因为没想好怎么构建，或许结合文本本身特征会好一点
 - 容易过拟合，用训练数据作为test-data训练50 epochs 可以达到AUC score 0.91，但对于没见过的数据AUC score为0.5上下波动
+
+# Synonym replacement
+使用nltk, textattack, textblob，gpt等方法对valid.json进行同义词替换，替换后用perplexity进行效果检验。
